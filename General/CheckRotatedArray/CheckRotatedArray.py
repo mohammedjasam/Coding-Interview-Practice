@@ -23,11 +23,9 @@ arrayA, arrayB = deque(arrayA), deque(arrayB)
 ans = False
 for i in range(sizeA):
     arrayA.rotate()
-
+    print(arrayA)
     if arrayA == arrayB:
        ans = True
 
 if ans == True:
     print("yes")
-
-

@@ -1,7 +1,9 @@
-a = [1,23,5,4,65,7,9,8,6,3,2,10,11,22,3235,67,8,3,3,1,23,32,5,34,7568,785,65,345,234]
+from collections import deque
 
+a = [1,23,5,4,65,7,9,8,6,3,2,10,11,22,3235,67,8,3,3,1,23,32,5,34,7568,785,65,345,234]
 a = sorted(list(set(a)))
-print(a)
+a = deque(a)
+
 
 find = 345
 
@@ -19,4 +21,8 @@ def searchh(a, find):
             a = a[mid+1:]
             searchh(a, find)
 
-searchh(a, find)
+# searchh(list(a), find)
+for i in range(len(a)):
+    a.rotate()
+    b = list(a)
+    searchh(b, find)
