@@ -13,7 +13,7 @@ class queue:
             del self.q[0]
             return x
         else:
-            return
+            print("No more elements")
 
 q = queue()
 print(q.lenq())
