@@ -9,9 +9,7 @@ for x in range(len(s)):
     else:
         d[s[x]] = [x]
 
-print(d)
-mini = 0
 for k, v in d.items():
     if len(v) == 1:
         print(k)
-        break    
+        break
