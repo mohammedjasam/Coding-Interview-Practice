@@ -1,8 +1,8 @@
 import java.io.FileNotFoundException;
 import java.io.IOException;
 
-public class revIterAndRecur {
-
+public class revIterAndRecur 
+{
     public static void main(String args[]) throws FileNotFoundException, IOException {
 
         //original string
