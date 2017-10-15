@@ -8,13 +8,13 @@
 
 
 def findPowerSum( total,  power,  num):
-    value = total - pow(num, power)
+    value = total - num**power
     if(value < 0):
          return 0
     elif(value == 0):
          return 1
     else:
-        return findPowerSum(value , power, num + 1) + findPowerSum(total, power, num+1)
+        return findPowerSum(value , power, num + 1) + findPowerSum(total, power, num + 1)
 
 total = int(input())
 power = int(input())
